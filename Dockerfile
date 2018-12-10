@@ -158,8 +158,6 @@ RUN julia install_oscar.jl
 COPY install_ijulia.jl /home/oscar/install_ijulia.jl
 RUN julia install_ijulia.jl
 
-RUN touch /home/oscar/.julia/v0.6/Cxx/src/Cxx.jl
-
 RUN echo "c.NotebookApp.token = ''" > /home/oscar/.jupyter/jupyter_notebook_config.py
 
 COPY Examples Examples
