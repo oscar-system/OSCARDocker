@@ -150,7 +150,7 @@ COPY install_polymake.jl /home/oscar/install_polymake.jl
 RUN julia install_polymake.jl
 
 COPY install_singular.jl /home/oscar/install_singular.jl
-RUN sudo julia install_singular.jl
+RUN julia install_singular.jl
 
 COPY install_oscar.jl /home/oscar/install_oscar.jl
 RUN julia install_oscar.jl
