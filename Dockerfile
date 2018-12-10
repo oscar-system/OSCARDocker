@@ -82,9 +82,9 @@ COPY Make.user /home/oscar/Make.user
 
 ENV MARCH x86-64
 
-RUN    wget https://github.com/JuliaLang/julia/releases/download/v0.6.3/julia-0.6.3-full.tar.gz \
-    && tar xf julia-0.6.3-full.tar.gz \
-    && rm  julia-0.6.3-full.tar.gz \
+RUN    wget https://github.com/JuliaLang/julia/releases/download/v1.0.2/julia-1.0.2-full.tar.gz \
+    && tar xf julia-1.0.2-full.tar.gz \
+    && rm  julia-1.0.2-full.tar.gz \
     && cd julia \
     && export MARCH=x86-64 \
     && cp ../Make.user . \
